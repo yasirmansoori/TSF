@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Banking System</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="info/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <!-- AOS  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/9fc545c71b.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-image: url("bg5.jpg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body onload="loader()">
+
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+
+  <!-- navbar starts here  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="bg.jpg" width="70" height="50">
+    <a class="navbar-brand" href="./index.html">&nbsp; &nbsp; The Sparks Foundation Bank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./customers.html">Customers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- navbar ends here  -->
+
+  <!-- here content starts here -->
+  <div class="container-fluid hero-content">
+    <div class="row align-items-center" style="margin-left: 380px;">
+      <!-- <div class="row align-items-center"> -->
+      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+        <br> <br>
+        <h1>Online Banking</h1>
+        <h5>By Sparks Foundation</h5>
+        <br> <br> <br>
+
+        <img class="bank" src="bg2.jpg" alt="" width="250px" height="250px">
+        <br><br> <br>
+        <p class="lead muted">Online banking made easy with Sparks Foundation which enables
+          customers of the bank to conduct a range of financial transactions through this website. </p><br>
+
+        <br><br> <br>
+        <h3> <br>
+          <p>Welcome To Sparks Foundation Bank!</p>
+        </h3>
+        <p>This project is made by Yasir Srivastava at #April_2023 GRIP. </p>
+        <br>
+        <br>
+        <a class="get-started" href="./customers.html">Get Started</a>
+        <br> <br>
+      </div>
+      <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+      </div>
+    </div>
+  </div>
+  <!-- <img class="hero-img" src="bg2.jpg" alt="img-showing-money-transfer"> -->
+
+  <!-- here content ends here -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title2">Contact <span> Me </span></h1>
+          <p> <i class="fa-regular fa-envelope"></i> yasir.mansoori000@gmail.com</p>
+          <p> <i class="fa-brands fa-whatsapp"> <a href="https://wa.me/+917827671825" target="_blank"> 7976523913 </a>
+            </i> </p>
+
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/yasir-mansoori/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://yasirmansoori.github.io/portfolio/" target="_blank"> <i class="fas fa-globe"></i> </a>
+            <a href="https://github.com/yasirmansoori" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- spalsh screen js -->
+  <script>
+    var preloader = document.getElementById("loading");
+    function loader() {
+      preloader.style.display = 'none';
+    }
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="htlettps://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+  <!-- aos data  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+    });
+  </script>
+
+</body>
+
+</html>

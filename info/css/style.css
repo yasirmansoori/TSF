@@ -1,0 +1,188 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    /* for text style */
+    box-sizing: border-box;
+}
+
+/* navbar css starts here  */
+.bg-light{
+    background-color: #ffffff!important;
+}
+
+.navbar-brand{
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 1.5rem;
+    color: #5f6368!important;
+}
+
+.nav-link{
+    color: #5f6368!important;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nav-link:hover{
+    background-color: #bfeeff;
+}
+/* navbar css ends here  */
+.container-fluid .hero-content{
+    margin-left: 615px;
+}
+.bank{
+    border-radius: 50%;
+    margin-top: -64px;
+    border: 2px solid black;
+}
+.hero-img {
+    margin-top: 140px;
+    height: 84vh;
+    border-radius: 55%;
+    border: 2px solid black;
+    margin-left: 340px;
+    width: 45%;
+}
+
+@media only screen and (max-width: 766px) {
+    .hero-img {
+      display: none;
+    }
+}
+
+.get-started{
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    font-size: 162%;
+    background-color: #fff;
+    color: #000000!important;
+    transition: 0.3s;
+}
+
+.get-started:hover{
+    text-decoration: none;
+    background-color: #bfdff0;
+    
+}
+/* here content css starts here  */
+
+/* get-started-buttons css starts here*/
+.get-started-content{
+    height: 60vh;
+    background-color: #35d6ef;
+    border-top-left-radius: 42rem;
+    border-top-right-radius: 42rem;
+    border-bottom-right-radius: 42rem;
+    border-bottom-left-radius: 42rem;
+}
+
+.get-started-content .row{
+    padding: 25vh 0;
+}
+
+.get-started-content a{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 162%;
+    background-color: #039be5;
+    color: #fff!important;
+    transition: 0.3s;
+}
+
+.get-started-content a:hover{
+    background-color: #017ab6;
+    text-decoration: none;
+}
+/* get-started-buttons css end here*/
+
+/* footer css starts here */
+
+
+.social-icons li{
+    list-style: none;
+    display: inline;
+    padding: 0.5rem;
+}
+/* footer css ends here  */
+
+.sub-title{
+    margin-top: 35px;
+  }
+  .sub-title2{
+      font-size: 60px;
+      font-weight: 600;
+      color: #000000;
+   }
+  .contact-left{
+    margin-left: 340px;
+    margin-top: 30px;
+      flex-basis: 40%;
+  }
+  .contact-left p{
+     margin-top: 15px;
+      color: rgb(0, 0, 0); 
+      margin-right: 15px;
+      font-size: 20px;
+      transition: transform 0.5s;
+  }
+  .contact-left a{
+      color: black;
+      text-decoration: none;
+  }
+  .contact-left p:hover{
+      color: #000000;
+      transform: translateY(-5px);  
+  }
+  .social-icons{
+      margin-top: 60px;
+      position: relative;
+      display: flex;
+      z-index: 2;
+      margin: 10px;
+      margin-left: -20px;
+  }
+  .social-icons a{
+     position: relative;
+     margin: 10px;
+     width: 50px;
+     height: 50px;
+     display: inline-block;
+     border-radius: 10px;
+     display: flex;
+     font-size: 2em;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid rgb(255, 255, 255,0.4);
+     border-right: 1px solid rgb(255, 255, 255,0.2);
+     border-bottom: 1px solid rgb(255, 255, 255,0.2);
+     box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(2px);
+     transition: 0.5s;
+     overflow: hidden;
+  }
+  .social-icons a:hover{
+     transform: translateY(-10px);
+  }
+  .social-icons a::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50px;
+      background: rgb(255, 255, 255,0.5);
+      transform: skewX(45deg) translateX(150px);
+      transition: 1s;
+   }
+   .social-icons a:hover::before{
+      transform: skewX(45deg) translateX(-150px); 
+   }
